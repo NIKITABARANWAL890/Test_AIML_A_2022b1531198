@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Counter App</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.847);
+            text-align: center;
+            color: white;
+        }
+        header{
+            height: 14vh;
+            background-color: rgba(41, 41, 41, 0.015);
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            display: grid;
+            height: 76vh;
+            grid-template-columns: 1fr 4fr;
+
+            .counter{
+                background-color:rgba(128, 128, 128, 0.771);
+            }
+            .content{
+                background-color: rgba(128, 128, 128, 0.701);
+            }
+        }
+        footer{
+            height: 10vh;
+            background-color: rgba(41, 41, 41, 0.015);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+        .convert{
+            margin-top: 50px;
+            padding: 0.4rem 1rem;
+            border-radius: 2px;
+            border: none;
+            font-size: 1rem;
+        }
+        .convertedPage{
+            padding: 2rem;
+            height: 100%;
+            /* padding: 2rem; */
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            gap: 2rem;
+        }
+        .amt{
+            height: 30px;
+
+            input{
+                height: 100%;
+            }
+            select{
+                height: 100%;
+            }
+        }
+        .convert{
+            height: 30px;
+
+            input{
+                height: 100%;
+            }
+            select{
+                height: 100%;
+            }
+        }
+        .convertBtn{
+            
+        }
+    </style>
+</head>
+<body>
+        <header>
+            Currency Counter App
+        </header>
+        <main>
+            <div class="counter">
+                <div class="container">
+                    <button class="convert">Convert</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="convertedPage">
+                    <h2>Currency Converter</h2>
+                    <div class="data">
+                        <div class="amt">
+                            Amount: <input type="text">
+                            <select name="" id=""><option value="">USD</option></select>
+                        </div>
+                        <div class="convert">
+                            Amount: <input type="text">
+                            <select name="" id=""><option value="">INR</option></select>
+                        </div>
+                    </div>
+                    <button class="convertBtn">Convert</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Developed by@abcSite
+        </footer>
+</body>
+</html>
