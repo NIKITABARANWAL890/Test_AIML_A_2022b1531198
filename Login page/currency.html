@@ -28,6 +28,7 @@
             display: grid;
             height: 76vh;
             grid-template-columns: 1fr 4fr;
+        
 
             .counter{
                 background-color:rgba(128, 128, 128, 0.771);
@@ -54,11 +55,11 @@
         .convertedPage{
             padding: 2rem;
             height: 100%;
-            /* padding: 2rem; */
             display: flex;
             flex-direction: column;
             margin-top: 2rem;
             gap: 2rem;
+            display: none;
         }
         .amt{
             height: 30px;
@@ -81,7 +82,7 @@
             }
         }
         .convertBtn{
-            
+            padding: 1rem;
         }
     </style>
 </head>
@@ -108,7 +109,7 @@
                             <select name="" id=""><option value="">INR</option></select>
                         </div>
                     </div>
-                    <button class="convertBtn">Convert</button>
+                    <button class="convertBtn" >Convert</button>
                 </div>
             </div>
         </main>
@@ -116,4 +117,15 @@
             Developed by@abcSite
         </footer>
 </body>
+<script>
+    const convertButton = document.querySelector(".convert");
+    const content = document.querySelector(".convertedPage");
+    
+    function showContent() {
+        content.style.display = "block"; 
+    }
+    
+    convertButton.addEventListener("click", showContent);
+    </script>
+    
 </html>
